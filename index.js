@@ -588,12 +588,12 @@ searchBar.addEventListener('keyup',(e)=>{
     showMovies(movies);
   }else{
     if(filterSomething == ""){
-        document.getElementById("msg-not-found").style.display = 'block'
+        document.getElementById("error-not-found").style.display = 'block'
         document.getElementById("list-movies").innerHTML = ""; 
     }else{
         console.log(showMovies(filterSomething,"ini apa"))
         showMovies(filterSomething);
-        document.getElementById("msg-not-found").style.display = 'none'
+        document.getElementById("error-not-found").style.display = 'none'
     }
   }
 })
@@ -656,3 +656,4 @@ let dataMovies= keyword
 }
 
 showMovies(filtergalery)
+
