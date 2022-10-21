@@ -28,11 +28,45 @@
   </nav>
 </div>
 
+<!--Carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjGvamzv-B-Ky1R0uuq4qyG3hbX1dfsi4s1_V8yI2Wg9CcDfQyjhHB80kgZ6IHMO8qhIM7I6rpTNEN1HfGa32qm6vP1it9inEK4YUO7DrqWU1rcjCc88mo8usUmDgHbRv0UqglkGTkUbuR7bN93UX5dMXCI4ER6YltadeKXqhI8n4eEcqfNtK0qLjVs=s600" class="d-block w-100" alt="Avatar"/>
+    </div>
+    <div class="carousel-item">
+      <img src="https://mmc.tirto.id/image/otf/700x0/2020/03/20/minions-the-rise-of-gru_ratio-16x9.jpg" class="d-block w-100" alt="minions rise of gru"/>
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.suara.com/pictures/653x366/2022/06/14/60122-poster-film-lightyear.webp" class="d-block w-100" alt="Lightyear">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 
 <section class="container mt-5">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5" id="list-movies">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5" id="list-movies" style="margin-top:20px; margin-top: 20px;">
   </div>
-  <h3 class="text-danger mt-5 text-center" id="error-not-found" style="display: none;">Movie not Found</h3>
+  <div class="container-fluid">
+    <div id="error-not-found" style="display: none;">
+        <h3 class="text-danger mt-5 text-center">Movies Not Found</h3>
+        <img src="https://media.giphy.com/media/hTP7H3BDqK3Chbr0mg/giphy.gif" class="center" /> 
+    </div>
+    </div>
+ 
 </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   <script src="./index.js"></script>

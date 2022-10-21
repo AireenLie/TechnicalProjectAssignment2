@@ -635,7 +635,7 @@ let dataMovies= keyword
       <div class="card-body">
       <div class"card-body-first" style="display:flex ;flex-direction:row;">
                      <div class="col align-self-start"> 
-                        <h4>${property.title}</h4>
+                        <h3>${property.title}</h3>
                   </div>
                      <div class="col align-self-start" style="text-align: right;padding-top: 3px;">
                    <strong>Rating: ${property.vote_average}</strong>
@@ -655,5 +655,22 @@ let dataMovies= keyword
   elListData.innerHTML=contentData
 }
 
+if(searchMovies==""){
+  showMovies(movies);
+  document.getElementById("carouselExampleIndicators").style.display = 'block'
+}
+else{
+  if(filtergalery==""){
+    document.getElementById("error-not-found").style.display = 'block'
+    document.getElementById("carouselExampleIndicators").style.display= 'none'
+    document.getElementById("list-movies").innerHTML = "";
+  }
+  else{
+    showMovies(filtergalery);
+    document.getElementById("carouselExampleIndicators").style.display= 'block'
+    document.getElementById("error-not-found").style.display = 'none'
+  }
+
+}
 showMovies(filtergalery)
 
